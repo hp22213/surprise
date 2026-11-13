@@ -1,0 +1,439 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For My Riddhi ❤️</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Georgia, serif;
+    background: linear-gradient(135deg,#230015,#680b35,#a32958);
+    color: white;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+}
+
+.page {
+    width: 100%;
+    max-width: 550px;
+}
+
+h1 {
+    font-size: 34px;
+    color: #ffd1df;
+    margin-bottom: 15px;
+    text-shadow: 0 0 15px #ff5b9c;
+}
+
+.subtitle {
+    color: #ffd9e7;
+    margin-bottom: 35px;
+    font-size: 17px;
+}
+
+.envelope {
+    width: 270px;
+    height: 175px;
+    margin: 40px auto;
+    position: relative;
+    background: #ffb4ca;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 35px #ff5b9c;
+    transition: .6s;
+}
+
+.envelope::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-left: 135px solid transparent;
+    border-right: 135px solid transparent;
+    border-top: 100px solid #ff7ba8;
+    transform-origin: top;
+    transition: .8s;
+    z-index: 3;
+}
+
+.envelope.open::before {
+    transform: rotateX(180deg);
+}
+
+.envelope::after {
+    content: "❤️";
+    position: absolute;
+    top: 70px;
+    left: 112px;
+    font-size: 45px;
+    z-index: 4;
+}
+
+.envelope.open::after {
+    display: none;
+}
+
+.letter {
+    display: none;
+    background: #fff0f4;
+    color: #742443;
+    padding: 30px 23px;
+    border-radius: 18px;
+    box-shadow: 0 0 35px #ff83b4;
+    animation: appear 1.2s ease;
+    line-height: 1.8;
+}
+
+.letter h2 {
+    color: #d52c69;
+    margin-bottom: 20px;
+}
+
+.letter p {
+    margin-bottom: 16px;
+    font-size: 16px;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(40px) scale(.9);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+button {
+    border: none;
+    padding: 14px 25px;
+    border-radius: 30px;
+    background: linear-gradient(45deg,#ff4d87,#ff91b5);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 0 18px #ff5b9c;
+    margin: 12px;
+    transition: .3s;
+}
+
+button:hover {
+    transform: scale(1.08);
+}
+
+#finalMessage {
+    display: none;
+    margin-top: 25px;
+    animation: appear 1s ease;
+}
+
+#finalMessage h2 {
+    color: #ffc1d7;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+#finalMessage p {
+    line-height: 1.8;
+}
+
+.falling {
+    position: fixed;
+    top: -40px;
+    animation: fall linear forwards;
+    pointer-events: none;
+    z-index: 10;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(110vh) rotate(720deg);
+        opacity: 0;
+    }
+}
+
+#music {
+    margin-top: 20px;
+}
+
+.small {
+    font-size: 13px;
+    color: #ffd1df;
+    margin-top: 20px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+<div class="page">
+
+<h1>For My Beautiful Riddhi ❤️</h1>
+
+<p class="subtitle">
+A little surprise from your Harshit... 🥹
+</p>
+
+<div class="envelope" id="envelope"
+onclick="openLetter()"></div>
+
+<p id="hint">💌 Tap the envelope to open your letter</p>
+
+<div class="letter" id="letter">
+
+<h2>My Dear Riddhi ❤️</h2>
+
+<p>
+Riddhi, mane tari sathe dilni ek vaat karvi chhe...
+</p>
+
+<p>
+Hu tane kharekhar khub prem karu chhu.
+Mara mate tu fakt relationship no ek part nathi,
+pan mari life ni ek khub special person chhe.
+</p>
+
+<p>
+Hu perfect nathi, mari pan bhulo thay chhe.
+Kyarek hu tari feelings samajvama ochho padi jau chhu,
+kyarek mari vaat thi tane hurt pan thay chhe.
+Pan maro intention tane kyarey hurt karvano nathi.
+</p>
+
+<p>
+Mane khabar chhe ke fakt sorry kehvathi badhu
+pachhu pehla jevu nathi thai jatu.
+Hu mara words karta mara actions thi tane
+batavva mangu chhu ke hu improve thava mangu chhu.
+</p>
+
+<p>
+Hu tane badlavva nathi mangto,
+hu potani andar je improvement jaruri chhe
+e karva mangu chhu.
+Tari feelings, tari respect ane tari happiness
+mara mate important chhe.
+</p>
+
+<p>
+Mane tari sathe hasvu chhe,
+nani nani vaat karvi chhe,
+beautiful memories banavvi chhe...
+Ane jyare problem aave tyare ekbijane samajva chhe.
+</p>
+
+<p>
+Hu tane koi pressure nathi aapto.
+Tane jetlo time joiye etlo leje.
+Hu bas etlu kehva mangu chhu ke
+tu mara mate khub special chhe. ❤️
+</p>
+
+<h2>I Am Truly Sorry, Riddhi 🥺</h2>
+
+<p>
+Thank you for being a beautiful part of my life.
+I really want to become a better person,
+not just say that I will.
+</p>
+
+<p style="font-size:22px;color:#d52c69;">
+I LOVE YOU ❤️
+</p>
+
+<p>
+With all my love,<br>
+<strong>Your Harshit ❤️</strong>
+</p>
+
+<button onclick="showFinal()">
+One Last Surprise For You 🌹
+</button>
+
+</div>
+
+<div id="finalMessage">
+
+<h2>For You, My Riddhi 🌹</h2>
+
+<p>
+If I could give you one thing in life,
+I would give you the ability to see yourself
+through my eyes...
+<br>
+Then you would know how special you are to me. ❤️
+</p>
+
+<h1 style="margin-top:25px;">🌹❤️🌹</h1>
+
+<p>
+You are special. Always remember that.
+</p>
+
+<h2>Forever With Love,<br>Harshit ❤️</h2>
+
+</div>
+
+<div id="music">
+
+<button onclick="toggleMusic()" id="musicBtn">
+🎵 Play Alfaaz - Hamza Malik
+</button>
+
+<audio id="song" loop preload="auto">
+<source src="./Alfaaz%20(Lyrics)%20-%20Hamza%20Malik,%20Zain%20Zohaib%20_%207Alfaaz%20_%20Most%20Viral%20Song%202026_128k.mp3" type="audio/mpeg">
+</audio>
+
+<p class="small">🎶 A special song for Riddhi ❤️</p>
+
+</div>
+
+<p class="small">
+Made with love, just for you Riddhi ❤️
+</p>
+
+</div>
+</div>
+
+<script>
+
+let opened = false;
+
+function openLetter() {
+
+    if(opened) return;
+    opened = true;
+
+    document.getElementById("envelope")
+    .classList.add("open");
+
+    document.getElementById("hint").style.display="none";
+
+    setTimeout(() => {
+
+        document.getElementById("letter").style.display="block";
+
+        document.getElementById("letter")
+        .scrollIntoView({
+            behavior:"smooth",
+            block:"start"
+        });
+
+    },700);
+}
+
+async function toggleMusic() {
+
+    const song = document.getElementById("song");
+    const btn = document.getElementById("musicBtn");
+
+    try {
+
+        if(song.paused) {
+
+            await song.play();
+            btn.innerHTML = "⏸ Pause Alfaaz";
+
+        } else {
+
+            song.pause();
+            btn.innerHTML = "🎵 Play Alfaaz - Hamza Malik";
+
+        }
+
+    } catch(error) {
+
+        alert("Song play nathi thatu! MP3 file nu naam ane location check kar.");
+
+    }
+}
+
+function showFinal() {
+
+    document.getElementById("finalMessage").style.display="block";
+
+    document.getElementById("finalMessage")
+    .scrollIntoView({
+        behavior:"smooth"
+    });
+
+    flowerRain();
+}
+
+function flowerRain() {
+
+    const flowers = [
+        "🌹","❤️","💗","💕","🌸","💖","🌷"
+    ];
+
+    for(let i=0;i<100;i++) {
+
+        setTimeout(() => {
+
+            const item = document.createElement("div");
+
+            item.className="falling";
+
+            item.innerHTML=flowers[
+                Math.floor(Math.random()*flowers.length)
+            ];
+
+            item.style.left=Math.random()*100+"vw";
+
+            item.style.fontSize=
+            (20+Math.random()*25)+"px";
+
+            item.style.animationDuration=
+            (3+Math.random()*4)+"s";
+
+            document.body.appendChild(item);
+
+            setTimeout(()=>item.remove(),7000);
+
+        },i*65);
+    }
+}
+
+// Continuous falling hearts
+
+setInterval(() => {
+
+    const heart=document.createElement("div");
+
+    heart.className="falling";
+    heart.innerHTML="💗";
+
+    heart.style.left=Math.random()*100+"vw";
+    heart.style.animationDuration="6s";
+    heart.style.fontSize="18px";
+
+    document.body.appendChild(heart);
+
+    setTimeout(()=>heart.remove(),6000);
+
+},800);
+
+</script>
+
+</body>
+</html>
